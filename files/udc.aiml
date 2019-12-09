@@ -5,12 +5,19 @@
     <template>I have no answer for that.</template>
   </category>
   <category>
-      <pattern>Hello bot</pattern>
+      <pattern>HELLO BOT</pattern>
       <template>Hello, World!</template>
   </category>
   <category>
-      <pattern>Hello *</pattern>
+      <pattern>HELLO *</pattern>
       <template>Hi, there</template>
   </category>
-  
+  <category>
+      <pattern>MY NAME IS * *</pattern>
+      <template>hi <star index="1"/>. How are you doing Mr. <star index="2"/></template>
+  </category>
+  <category>
+      <pattern>_ BOT</pattern>
+      <template>I am here</template>
+  </category>
 </aiml>
