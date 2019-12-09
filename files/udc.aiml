@@ -5,16 +5,43 @@
     <template>I have no answer for that.</template>
   </category>
   <category>
-      <pattern>HELLO *</pattern>
-      <template>Hi, there</template>
+        <pattern>HELLO BOT</pattern>
+        <template>
+          <random>
+            <li>Hi</li>
+            <li>Hello</li>
+            <li>Hey, there</li>
+          </random>
+        </template>
   </category>
   <category>
-      <pattern>MY NAME IS * *</pattern>
-      <template>hi <set name="firstname"><star index="1"/></set>. How are you doing Mr. <set name="lastname"><star index="2"/></set></template>
+      <pattern>test</pattern>
+      <template>
+          <set name="personName">
+          <random>
+              <li>Ram</li>
+              <li>Shym</li>
+              <li>Rahul</li>
+          </random>
+          </set> ate a <random>
+              <li>apple</li>
+              <li>banana</li>
+              <li>kiwi</li>
+              </random>
+      </template>
   </category>
   <category>
-      <pattern>WHAT IS MY NAME</pattern>
-      <template>your name is <get name="firstname"/> <get name="lastname"/></template>
+      <pattern>ROLL A DICE</pattern>
+      <template>
+          <random>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+          </random>
+      </template>
   </category>
 
 </aiml>
