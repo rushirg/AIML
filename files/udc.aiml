@@ -5,19 +5,16 @@
     <template>I have no answer for that.</template>
   </category>
   <category>
-      <pattern>HELLO BOT</pattern>
-      <template>Hello, World!</template>
-  </category>
-  <category>
       <pattern>HELLO *</pattern>
       <template>Hi, there</template>
   </category>
   <category>
       <pattern>MY NAME IS * *</pattern>
-      <template>hi <star index="1"/>. How are you doing Mr. <star index="2"/></template>
+      <template>hi <set name="firstname"><star index="1"/></set>. How are you doing Mr. <set name="lastname"><star index="2"/></set></template>
   </category>
   <category>
-      <pattern>_ BOT</pattern>
-      <template>I am here</template>
+      <pattern>WHAT IS MY NAME</pattern>
+      <template>your name is <get name="firstname"/> <get name="lastname"/></template>
   </category>
+
 </aiml>
