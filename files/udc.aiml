@@ -15,21 +15,35 @@
         </template>
   </category>
   <category>
-      <pattern>test</pattern>
+      <pattern>TEST</pattern>
       <template>
+          <think>
           <set name="personName">
           <random>
               <li>Ram</li>
               <li>Shym</li>
               <li>Rahul</li>
           </random>
-          </set> ate a <random>
-              <li>apple</li>
-              <li>banana</li>
-              <li>kiwi</li>
-              </random>
+          </set>
+          </think>
+          The person I chose was <get name="personName"></get>
+         </template>
+  </category>
+  <category>
+      <pattern>I ATE *</pattern>
+      <template>
+          That sounds yummy
+          <think><set name="food"><star/></set></think>
       </template>
   </category>
+  <category>
+      <pattern>WHAT FOOD I LIKE</pattern>
+      <template>
+          Well earlier you ate <get name="food"/>. So based on that I think you like that.
+      </template>
+  </category>
+  
+  
   <category>
       <pattern>ROLL A DICE</pattern>
       <template>
