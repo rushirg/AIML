@@ -43,6 +43,38 @@
       </template>
   </category>
   
+  <category>
+      <pattern>ASK ME A QUESTION</pattern>
+      <template>
+          Do you like <random>
+              <li>Bill Gates</li>
+              <li>Steve Jobs</li>
+              <li>Linus Torvolds</li>
+          </random>
+      </template>
+  </category>
+  <category>
+      <pattern>ASK ME ANOTHER QUESTION</pattern>
+      <template>
+          Do you like pizza?
+      </template>
+  </category>
+
+  <category>
+      <that>DO YOU LIKE * *</that>
+      <pattern>YES</pattern>
+      <template>
+          Me too. What do you like the most about Mr.<thatstar index="2"/>?
+      </template>
+  </category>
+  <category>
+      <pattern>NO</pattern>
+      <template>
+          Oh! that a shame.
+      </template>
+  </category>
+  
+  
   
   <category>
       <pattern>ROLL A DICE</pattern>
