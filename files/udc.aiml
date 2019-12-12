@@ -1,47 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-  <category>
-      <pattern>HI</pattern>
-      <template>Hi, there!</template>
-  </category>
-  <category>
-      <pattern>HELLO</pattern>
-      <template><srai>HI</srai>
-      </template>
-  </category>
-  
-  <category>
-      <pattern>WHO IS YOUR FATHER</pattern>
-      <template>I was created by <bot name="father"/></template>
-  </category>
-  
-  <category>
-      <pattern>_ DAD</pattern>
-      <template><srai><star/> FATHER</srai></template>
-  </category>
-  
-  <category>
-      <pattern>WHO IS *</pattern>
-      <template>Never heard of him</template>
-  </category>
-  <category>
-      <pattern>WHO IS <bot name="father"/></pattern>
-      <template>He is my father.</template>
-  </category>
-  
-  <category>
-      <pattern>WHAT IS YOUR NAME</pattern>
-      <template>My name is <bot name="name"/>.</template>
-  </category>
-  <category>
-      <pattern>WHAT IS YOUR AGE</pattern>
-      <template>I am <bot name="age"/> years old.</template>
-  </category>
-  
-  <category>
-      <pattern>Can you tell me *</pattern>
-      <template><srai>WHAT IS <star/></srai></template>
-  </category>
-  
-  
+<category>
+    <pattern>MY NAME IS *</pattern>
+    <template>
+        Hi <set name="firstname"><star/></set>.
+        <condition name="firstname">
+            <li value="AIML">Oh! That's a Programming language</li>
+            <li value="Rushi">Nice to see you</li>
+            <li>Nice name</li>
+        </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>WHAT IS MY NAME</pattern>
+    <template>
+        <condition name="firstname">
+            <li value="unknown">I don't know that. As you didn't tell me.</li>
+            <li>Your name is <get name="firstname"/>. <srai>MY NAME IS <get name="firstname"/></srai> </li>
+        </condition>
+    </template>
+</category>
+
 </aiml>
