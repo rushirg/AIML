@@ -12,7 +12,7 @@
   
   <category>
       <pattern>WHO IS YOUR FATHER</pattern>
-      <template>I was created by a programming language</template>
+      <template>I was created by <bot name="father"/></template>
   </category>
   
   <category>
@@ -21,12 +21,21 @@
   </category>
   
   <category>
+      <pattern>WHO IS *</pattern>
+      <template>Never heard of him</template>
+  </category>
+  <category>
+      <pattern>WHO IS <bot name="father"/></pattern>
+      <template>He is my father.</template>
+  </category>
+  
+  <category>
       <pattern>WHAT IS YOUR NAME</pattern>
-      <template>My name is ChatBot.</template>
+      <template>My name is <bot name="name"/>.</template>
   </category>
   <category>
       <pattern>WHAT IS YOUR AGE</pattern>
-      <template>I am 10 months old.</template>
+      <template>I am <bot name="age"/> years old.</template>
   </category>
   
   <category>
