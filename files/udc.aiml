@@ -1,93 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
   <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+      <pattern>HI</pattern>
+      <template>Hi, there!</template>
   </category>
   <category>
-        <pattern>HELLO BOT</pattern>
-        <template>
-          <random>
-            <li>Hi</li>
-            <li>Hello</li>
-            <li>Hey, there</li>
-          </random>
-        </template>
-  </category>
-  <category>
-      <pattern>TEST</pattern>
-      <template>
-          <think>
-          <set name="personName">
-          <random>
-              <li>Ram</li>
-              <li>Shym</li>
-              <li>Rahul</li>
-          </random>
-          </set>
-          </think>
-          The person I chose was <get name="personName"></get>
-         </template>
-  </category>
-  <category>
-      <pattern>I ATE *</pattern>
-      <template>
-          That sounds yummy
-          <think><set name="food"><star/></set></think>
-      </template>
-  </category>
-  <category>
-      <pattern>WHAT FOOD I LIKE</pattern>
-      <template>
-          Well earlier you ate <get name="food"/>. So based on that I think you like that.
+      <pattern>HELLO</pattern>
+      <template><srai>HI</srai>
       </template>
   </category>
   
   <category>
-      <pattern>ASK ME A QUESTION</pattern>
-      <template>
-          Do you like <random>
-              <li>Bill Gates</li>
-              <li>Steve Jobs</li>
-              <li>Linus Torvolds</li>
-          </random>
-      </template>
+      <pattern>WHO IS YOUR FATHER</pattern>
+      <template>I was created by a programming language</template>
+  </category>
+  
+  <category>
+      <pattern>_ DAD</pattern>
+      <template><srai><star/> FATHER</srai></template>
+  </category>
+  
+  <category>
+      <pattern>WHAT IS YOUR NAME</pattern>
+      <template>My name is ChatBot.</template>
   </category>
   <category>
-      <pattern>ASK ME ANOTHER QUESTION</pattern>
-      <template>
-          Do you like pizza?
-      </template>
+      <pattern>WHAT IS YOUR AGE</pattern>
+      <template>I am 10 months old.</template>
   </category>
-
+  
   <category>
-      <that>DO YOU LIKE * *</that>
-      <pattern>YES</pattern>
-      <template>
-          Me too. What do you like the most about Mr.<thatstar index="2"/>?
-      </template>
-  </category>
-  <category>
-      <pattern>NO</pattern>
-      <template>
-          Oh! that a shame.
-      </template>
+      <pattern>Can you tell me *</pattern>
+      <template><srai>WHAT IS <star/></srai></template>
   </category>
   
   
-  
-  <category>
-      <pattern>ROLL A DICE</pattern>
-      <template>
-          <random>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
-              <li>6</li>
-          </random>
-      </template>
-  </category>
-
 </aiml>
