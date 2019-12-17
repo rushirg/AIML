@@ -95,4 +95,21 @@
     </template>
 </category>
 -->
+
+<!--
+# _ -> match either zero or more
+^ * -> match at lease one word
+-->
+
+<category>
+    <pattern># FRANCE #</pattern>
+    <template>That's in Europe!</template>
+</category>
+
+<category>
+    <pattern>$I LIKE FRANCE</pattern>
+    <template>I've never been there.</template>
+</category>
+
+
 </aiml>
