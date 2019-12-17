@@ -2,6 +2,24 @@
 <aiml>
 
 <category>
+    <pattern>TEST</pattern>
+    <template>
+        <think><set name="input">iT IS COLD Today</set></think>
+        <lowercase><get name="input"/></lowercase>
+        <uppercase><get name="input"/></uppercase>
+        <formal><get name="input"/></formal>
+        <explode><get name="input"/></explode>
+    </template>
+</category>
+
+<category>
+    <pattern>SPELL *</pattern>
+    <template>
+        <uppercase><explode><star/></explode></uppercase>
+    </template>
+</category>
+
+<category>
     <pattern>I LIKE *</pattern>
     <template>
         <think><set name="it"><star/></set></think>
