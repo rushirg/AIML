@@ -73,6 +73,7 @@
     </template>
 </category>
 
+<!--
 <category>
     <pattern>* IS *</pattern>
     <template>
@@ -93,5 +94,5 @@
         </learn>
     </template>
 </category>
-
+-->
 </aiml>

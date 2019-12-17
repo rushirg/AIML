@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+    <category>
+        <pattern>MY COLOR IS<set>colors</set></pattern>
+        <template>
+            Nice choice! I like <star/> too.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>MY COLOR IS *</pattern>
+        <template>
+            Interesting. I don't know that color.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>IS <set>number</set> A NUMBER</pattern>
+        <template>
+            Yes. <star/> is a number.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>IS * A NUMBER</pattern>
+        <template>
+            No. <star/> is not a number.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>I WANT A <set>sizes</set> PIZZA</pattern>
+        <template>What toppings do you want?</template>
+    </category>
+    <category>
+        <pattern>I WANT A <set>toppings</set> PIZZA</pattern>
+        <template>What size do you want?</template>
+    </category>
+    <category>
+        <pattern>I WANT A <set>sizes</set> <set>toppings</set> PIZZA</pattern>
+        <template>Coming, right up.</template>
+    </category>
+    <category>
+        <pattern>I WANT A * PIZZA</pattern>
+        <template>What do you mean?</template>
+    </category>
+    
+    <category>
+        <pattern>NAME SOMETHING THAT IS <set>colors</set></pattern>
+        <template>How about <map name="objects"><star/></map></template>
+    </category>
+    
+    <category>
+        <pattern>NAME SOMETHING THAT IS *</pattern>
+        <template>How about <star/> paint?</template>
+    </category>
+      
+    <category>
+        <pattern>WHAT NUMBER COMES AFTER *</pattern>
+        <template>
+            <map name="successor"><star/></map>
+        </template>
+    </category>
+      
+</aiml>
