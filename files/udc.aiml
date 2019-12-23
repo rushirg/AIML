@@ -186,4 +186,9 @@
     <template><sentence><lowercase><star/></lowercase></sentence></template>
 </category>
 
+<category>
+    <pattern>HOW MUCH DO YOU KNOW</pattern>
+    <template>I have knowledge of <map name="predecessor"><size/></map> items.</template>
+</category>
+
 </aiml>
