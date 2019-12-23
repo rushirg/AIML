@@ -113,9 +113,35 @@
                 </button>
             </card>
             </carousel>
-            
         </template>
     </category>
     
+    <category>
+        <pattern>TEST1</pattern>
+        <template>
+            line number 1<break/>
+            line number 2<break/>
+            line number 3
+        </template>
+    </category>
     
+    <category>
+        <pattern>TEST2</pattern>
+        <template>
+            line number 1<split/>
+            line number 2<split/>
+            line number 3
+        </template>
+    </category>
+    
+    <category>
+        <pattern>TEST3</pattern>
+        <template>
+            line number 1<delay>2</delay>
+            line number 2<delay>5</delay>
+            line number 3
+        </template>
+    </category>
+    
+
 </aiml>
