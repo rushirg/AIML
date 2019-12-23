@@ -168,4 +168,11 @@
         </template>
     </category>
 
+    <category>
+        <pattern>WHAT IS *</pattern>
+        <template>
+            I don't know what <star/> is <break/>
+            I don't know what <person/> is
+        </template>
+    </category>
 </aiml>
