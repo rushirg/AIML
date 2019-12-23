@@ -111,5 +111,12 @@
     <template>I've never been there.</template>
 </category>
 
+<category>
+    <pattern>WHAT IS THE DATE</pattern>
+    <template>It is <date/></template>
+</category>
+
+
+
 
 </aiml>
