@@ -145,4 +145,9 @@
     <template>I know you as <id/></template>
 </category>
 
+<category>
+    <pattern>WhAT DID I SAY</pattern>
+    <template>You said <input index="2"/></template>
+</category>
+
 </aiml>
