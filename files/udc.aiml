@@ -172,4 +172,13 @@
     <template>I work using <program/></template>
 </category>
 
+<category>
+    <pattern>HI</pattern>
+    <template>Hi there</template>
+</category>
+<category>
+    <pattern>WHAT DID YOU SAY</pattern>
+    <template>I said <response index="2"/></template>
+</category>
+
 </aiml>
