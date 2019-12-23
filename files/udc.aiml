@@ -140,4 +140,9 @@
     <template><gender><star/></gender></template>
 </category>
 
+<category>
+    <pattern>WHAT IS MY ID</pattern>
+    <template>I know you as <id/></template>
+</category>
+
 </aiml>
