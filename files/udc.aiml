@@ -191,4 +191,33 @@
     <template>I have knowledge of <map name="predecessor"><size/></map> items.</template>
 </category>
 
+<category>
+    <pattern>LET US TALK ABOUT *</pattern>
+    <template>
+        Sure, <set name="topic"><star/></set> sounds interesting.
+    </template>
+</category>
+
+<category>
+    <pattern>WHAT IS tHE SUBJECT</pattern>
+    <template>We are talking avout <topicstar/></template>
+</category>
+
+<topic name="ROBOTS">
+    <category>
+        <pattern>DO YOU LIKE THEM</pattern>
+        <template>
+            Only if they are friendly.
+        </template>
+    </category>
+</topic>
+
+<topic name="PEOPLE">
+    <category>
+        <pattern>DO YOU LIKE THEM</pattern>
+        <template>
+            Most of them seem harmless.
+        </template>
+    </category>
+</topic>
 </aiml>
