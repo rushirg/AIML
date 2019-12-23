@@ -71,4 +71,14 @@
         </template>
     </category>
     
+    <category>
+        <pattern>GOOGLE *</pattern>
+        <template>
+            <link>
+                <text>Open result for <star/></text>
+                <url>https://www.google.com/search?q=<star/></url>
+            </link>
+        </template>
+    </category>
+    
 </aiml>
