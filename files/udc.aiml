@@ -123,8 +123,16 @@
 
 <category>
     <pattern>SAY *</pattern>
-    <template><normalize><star/></normalize></template>
+    <!--- <template><normalize><star/></normalize></template> -->
+    <template>
+        first = <first><star/></first><break/>
+        last = <rest><star/></rest>
+        
+    <!-- 
+        first = <star/><break/>
+        last = <star index=2/>
+    -->
+    </template>
 </category>
-
 
 </aiml>
