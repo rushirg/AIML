@@ -181,4 +181,9 @@
     <template>I said <response index="2"/></template>
 </category>
 
+<category>
+    <pattern>TEST *</pattern>
+    <template><sentence><lowercase><star/></lowercase></sentence></template>
+</category>
+
 </aiml>
