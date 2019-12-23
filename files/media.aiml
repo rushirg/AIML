@@ -81,4 +81,41 @@
         </template>
     </category>
     
+    <category>
+        <pattern>I AM BORED</pattern>
+        <template>
+            <carousel>
+            <card>
+                <image>https://static-cdn.jtvnw.net/jtv_user_pictures/78edafdce91f338a-profile_image-70x70.png</image>
+                <title>Mitsuku</title>
+                <subtitle>Talk to me</subtitle>
+                <button>
+                    <text>Click here ð</text>
+                    <url>https://www.pandorabots.com/mitsuku/</url>
+                </button>
+            </card>
+            <card>
+                <image>https://www.pandorabots.com/mitsuku/img/messenger.png</image>
+                <title>Facebook Messenger</title>
+                <subtitle>Talk to your friends</subtitle>
+                <button>
+                    <text>Click here </text>
+                    <url>https://www.messenger.com/t/chatbots.io</url>
+                </button>
+            </card>
+            <card>
+                <image>https://www.pandorabots.com/mitsuku/img/telegram.png</image>
+                <title>Telegram</title>
+                <subtitle>Find me on Telegram</subtitle>
+                <button>
+                    <text>Click here ð</text>
+                    <url>http://telegram.me/mitsuku_bot</url>
+                </button>
+            </card>
+            </carousel>
+            
+        </template>
+    </category>
+    
+    
 </aiml>
