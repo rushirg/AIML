@@ -143,5 +143,29 @@
         </template>
     </category>
     
+    <category>
+        <pattern>LIST</pattern>
+        <template>
+            Here are some lists
+            <ol>
+                <li>Book a ticket</li>
+                <li>Cancel a ticket</li>
+                <li>Contact us</li>
+            </ol>
+            Which toppings do you want
+            <ul>
+                <li>Chicken</li>
+                <li>Ham</li>
+                <li>Paperoni</li>
+            </ul>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>1</pattern>
+        <template>
+            Thank you for booking a ticket with us.
+        </template>
+    </category>
 
 </aiml>
