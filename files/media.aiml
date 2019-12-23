@@ -62,4 +62,13 @@
         </template>
     </category>
     
+    <category>
+        <pattern>WHAT DO YOU LOOK LIKE</pattern>
+        <template>
+            I look like this
+            <image>https://www.pandorabots.com/mitsuku/img/mitsukucircle.png</image>
+            <video>https://www.pandorabots.com/mitsuku/img/mitsuku.mp4</video>        
+        </template>
+    </category>
+    
 </aiml>
